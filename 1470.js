@@ -1,3 +1,5 @@
+// Shuffle the Array
+
 var shuffle = function(nums, n) {
     result = []
     firstArray = nums.slice(0,n)
