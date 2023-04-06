@@ -22,4 +22,4 @@ var sortSentence = function(s) {
     return answer
 };
 
-console.log(sortSentence("is2 sentence4 This1 a3"))
+console.log(sortSentence("My1 Rince4 is3 Mathew5 Name2"))
