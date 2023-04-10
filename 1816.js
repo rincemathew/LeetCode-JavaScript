@@ -15,6 +15,6 @@ var truncateSentence = function(s, k) {
 };
 
 
-console.log(truncateSentence("Hello how are you Contestant",4))
-console.log(truncateSentence("What is the solution to this problem",4))
-console.log(truncateSentence("chopper is not a tanuki",5))
+console.log(truncateSentence("Hello how are you Contestant",4)) //Hello how are you
+console.log(truncateSentence("What is the solution to this problem",4))  //What is the solution
+console.log(truncateSentence("chopper is not a tanuki",5))  //chopper is not a tanuki
