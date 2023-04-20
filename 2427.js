@@ -1,3 +1,7 @@
+// Number of Common Factors
+// Given two positive integers a and b, return the number of common factors of a and b.
+
+// An integer x is a common factor of a and b if x divides both a and b.
 /**
  * @param {number} a
  * @param {number} b
@@ -15,4 +19,4 @@ var commonFactors = function(a, b) {
 };
 
 console.log(commonFactors(12,6))
-// console.log(commonFactors(25,30))
+console.log(commonFactors(25,30))
