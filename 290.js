@@ -1,20 +1,21 @@
+// Word Pattern
+
 /**
  * @param {string} pattern
  * @param {string} s
  * @return {boolean}
  */
 var wordPattern = function(pattern, s) {
-    obj = {}
+    const obj = new Map([])
     s = s.split(" ")
-    console.log(s)
     for(i=0;i<pattern.length;i++) {
-        if(!obj.hasOwnProperty(pattern[i])) {
-            obj.pattern[i] = s[i]
+        if(!obj.has(pattern[i])) {
+            obj.set(pattern[i],s[i])
         }
         console.log(obj)
-        // if(obj.pattern[i] != s[i]) {
-        //     return false
-        // }
+        if(obj.get(pattern[i]) !== s[i]) {
+            return false
+        }
     }
     return true
 };
