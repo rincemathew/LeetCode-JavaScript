@@ -1,16 +1,13 @@
 
-
+// Minimum Moves to Equal Array Elements II
 
 var minMoves2 = function (nums) {
-  let total = 0;
-  for (i = 0; i < nums.length; i++) {
-    total += nums[i];
-  }
-  median = Math.floor(total / nums.length);
+  let sortedNum = nums.sort((a, b) => a - b);
+  let median = sortedNum[Math.floor((0 + nums.length) / 2)];
 
   let result = 0;
-  for (j = 0; j < nums.length; j++) {
-    result = result + (Math.abs(median - nums[j]))
+  for (let j = 0; j < nums.length; j++) {
+    result += Math.abs(median - nums[j]);
   }
   return result;
 };
